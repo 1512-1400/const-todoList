@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky nav bar</title>
+    <link rel="stylesheet" href="./tailwind.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="containerr w-screen h-screen flex justify-center items-center overflow-hidden">
+        <div class="leftSide w-1/2 h-screen flex justify-center items-center"> 
+            <div class="leftMain w-full h-5/6 mx-10 bg-transparent rounded-3xl">
+                <div class="absoluteContainer w-full h-full flex flex-col justify-around items-center text-xl font-bold absolute top-0 left-0 z-10">
+                    <p class="border-b-2 border-white p-1 shadow-xl cursor-pointer">enter your todo title...</p>
+                    <div class="w-full flex flex-col justify-center items-center">
+                        <div class="inputBox flex py-5 justify-center items-center h-10 w-8/12 py-1 px-5 bg-transparent mb-10 outline-none relative overflow-hidden cursor-pointer">
+                            <input class="input w-full h-full py-1 px-5 bg-transparent outline-none z-10 absolute cursor-pointer" type="text" placeholder="todo: ">
+                        </div>
+                        <button class="btn py-1 w-4/12 h-10 bg-transparent relative z-10 flex justify-center items-center"><p class="z-50 absolute">ok</p></button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="rightSide w-1/2 h-5/6 border-gray-700 rounded-3xl mx-10 overflow-hidden text-gray-800">
+            <div class="rightAbsoluteContainer py-3 w-full h-full flex flex-col justify-start items-center absolute top-0 left-0 z-10">
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

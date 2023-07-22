@@ -1,0 +1,132 @@
+*{
+    overflow: hidden;
+}
+.containerr{
+    background-image: url(./pexels-negative-space-169573.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #ECF8F9;
+}
+.leftMain, .rightSide{
+    position: relative;
+    background: transparent;
+    overflow: hidden;
+}
+.leftMain::after, .rightSide::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    background-color: #001C30;
+    opacity: 30%;
+}
+.btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ECF8F9;
+    z-index: 0;
+    transform: translate(-100%);
+    margin: 0;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ECF8F9;
+    z-index: 0;
+    transform: translate(101%);
+    margin: 0;
+}
+.btn{
+    z-index: 10;
+    overflow: hidden;
+    border-bottom: 0px;
+    border-top: 0;
+    border-left: 2px solid #ECF8F9;
+    border-right : 2px solid #ECF8F9;
+}
+.btn:hover.btn::after{
+    transform: translate(0);
+    transition: all 0.5s;
+}
+.btn:hover.btn::before{
+    transform: translate(0);
+    transition: all 0.5s;
+}
+.btn:hover{
+    background-color: #ECF8F9;
+    transition: all 0.8s;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.466) ;
+    color: #1f2937;
+}
+.input::placeholder{
+    color: #ECF8F9;
+}
+.input:hover.input::placeholder{
+    color: #1f2937;
+    transition: all 0.5s;
+}
+.inputBox::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #ECF8F9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.inputBox:hover.inputBox::after{
+    width: 100%;
+    transition: all ease-out 0.5s;
+}
+.inputBox::before{
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #ECF8F9;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.inputBox:hover.inputBox::before{
+    width: 100%;
+    transition: all ease-out 0.5s;
+}
+.inputBox:hover{
+    /* background-color: #ECF8F9; */
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.466) ;
+    transition: all ease-out 0.5s;
+}
+.todo{
+    background-color: #ECF8F9;
+    box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.466) ;
+}
+.todo:hover{
+    background-color: #bbc7c9;
+    transition: all ease-out 0.3s;
+}
+.compitedTodo{
+    background-color: #bbc7c9;
+}
+.decorationn{
+    text-decoration: line-through;
+}
+.close{
+    width: 15px;
+}
+.line{
+    text-decoration: line-through;
+}
